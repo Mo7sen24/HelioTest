@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دليل هليوبوليس الجديدة</title>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F6FA;--surface:#fff;--ink:#0F2540;--muted:#5A6B82;--line:#E0E7F0;--sun:#F5B400;--teal:#0E7C86;--tealbg:#E4F4F5;--navy:#0B1F3A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1424;--surface:#13233A;--ink:#EAF0F8;--muted:#9DADC2;--line:#23364F;--tealbg:#12363B;--teal:#4CC3CD}}
+:root[data-theme="dark"]{--bg:#0A1424;--surface:#13233A;--ink:#EAF0F8;--muted:#9DADC2;--line:#23364F;--tealbg:#12363B;--teal:#4CC3CD}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,Arial,sans-serif;line-height:1.7}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+h1,h2,h3{font-family:'Reem Kufi',Tajawal,Tahoma,sans-serif;line-height:1.3;margin:0}
+.top{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding-bottom:70px}
+.top::before{content:"";position:absolute;inset-inline-start:-120px;top:-140px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(245,180,0,.55),rgba(245,180,0,0) 68%)}
+.top::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:44px 44px}
+.top .wrap{position:relative;z-index:1}
+header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{font-family:'Reem Kufi',Tajawal,sans-serif;font-weight:700;font-size:20px;display:flex;align-items:center;gap:10px}
+.sun{width:28px;height:28px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 6px rgba(245,180,0,.28)}
+.btn{border:0;cursor:pointer;font:inherit;font-weight:700;border-radius:10px;padding:10px 20px;background:var(--sun);color:#0B1F3A}
+.btn.alt{background:transparent;border:1.5px solid var(--line);color:var(--ink)}
+.btn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,.cat:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.hero{padding:34px 0 10px}
+.hero h1{font-size:clamp(30px,6vw,54px);max-width:13em}
+.hero p{color:#C3D0E2;font-size:18px;max-width:34em;margin:12px 0 26px}
+.search{display:flex;gap:8px;background:#fff;border-radius:14px;padding:8px;max-width:660px;box-shadow:0 14px 34px rgba(0,0,0,.28)}
+.search input{flex:1;min-width:0;border:0;background:transparent;color:#0F2540;font:inherit;font-size:17px;padding:8px 12px}
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:10px;margin-top:-46px;position:relative;z-index:2}
+.cat{background:var(--surface);border:1.5px solid var(--line);color:var(--ink);font:inherit;font-weight:700;border-radius:14px;padding:14px 6px;cursor:pointer;display:grid;gap:4px;justify-items:center;box-shadow:0 6px 18px rgba(15,37,64,.08);transition:transform .15s,border-color .15s}
+.cat span{font-size:26px;line-height:1}
+.cat:hover{transform:translateY(-2px);border-color:var(--sun)}
+.cat[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+h2{font-size:26px;margin:38px 0 16px;display:flex;align-items:center;gap:10px}
+h2::before{content:"";width:6px;height:26px;border-radius:3px;background:var(--sun)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:6px;box-shadow:0 2px 10px rgba(15,37,64,.05);transition:box-shadow .2s}
+.card:hover{box-shadow:0 12px 28px rgba(15,37,64,.12)}
+.head{display:flex;gap:12px;align-items:center}
+.ico{flex:none;width:46px;height:46px;border-radius:12px;background:var(--tealbg);display:grid;place-items:center;font-size:24px}
+.card h3{font-size:19px}
+.tag{font-size:13px;color:var(--teal);font-weight:700}
+.meta{color:var(--muted);font-size:15px;margin:2px 0 0}
+.price{font-family:'Reem Kufi',Tajawal,sans-serif;font-size:22px;font-weight:700}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:12px}
+.acts a{text-align:center;text-decoration:none;font-weight:700;border-radius:10px;padding:9px 6px;font-size:15px}
+.call{background:var(--navy);color:#fff}.wa{background:#1FA855;color:#fff}
+.map{grid-column:1/-1;border:1.5px solid var(--line);color:var(--ink)}
+.map:hover{border-color:var(--teal);color:var(--teal)}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:28px;border:1.5px dashed var(--line);border-radius:14px}
+dialog{border:0;border-radius:18px;padding:0;max-width:440px;width:calc(100% - 28px);background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(8,16,28,.65)}
+form{padding:22px;display:grid;gap:12px}
+label{display:grid;gap:4px;font-weight:700;font-size:15px}
+input,select{font:inherit;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+footer{margin:44px 0 24px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+<header>
+  <div class="logo"><span class="sun"></span>دليل هليوبوليس الجديدة</div>
+  <button class="btn ghost" id="openAdd">أضف نشاطك أو شقتك</button>
+</header>
+<section class="hero">
+  <h1>كل اللي محتاجه في مدينتك، في مكان واحد</h1>
+  <p>محلات وصنايعية وخدمات وشقق للبيع، بأرقام مباشرة وموقع على الخريطة.</p>
+  <div class="search" role="search">
+    <input id="q" type="search" placeholder="ابحث: سباك، صيدلية، سوبر ماركت..." aria-label="بحث">
+    <button class="btn" id="go">بحث</button>
+  </div>
+</section>
+</div></div>
+
+<div class="wrap">
+<div class="cats" id="cats" role="group" aria-label="التصنيفات"></div>
+
+<h2 id="hList">الخدمات والمحلات</h2>
+<div class="grid" id="list" aria-live="polite"></div>
+
+<h2 id="hFlats">شقق للبيع</h2>
+<div class="grid" id="flats"></div>
+
+<footer>الأنشطة المضافة بتتراجع قبل ظهورها في الدليل.</footer>
+</div>
+
+<dialog id="dlg">
+<form id="addForm" method="dialog">
+  <h3>أضف نشاطك أو شقتك</h3>
+  <label>اسم النشاط أو الصنايعي (أو عنوان إعلان الشقة)<input name="name" required></label>
+  <label>التصنيف<select name="cat" id="catSel"></select></label>
+  <label>العنوان أو الحي<input name="area" placeholder="مثال: الحي الأول، شارع الخدمات"></label>
+  <div id="locField" style="display:grid;gap:8px"><label>رابط الموقع على الخريطة (اختياري)<input name="loc" inputmode="url" placeholder="الصق رابط جوجل ماب"></label><button class="btn alt" type="button" id="geo">📍 استخدم موقعي الحالي</button></div>
+  <label>رقم التليفون<input name="phone" required inputmode="tel" pattern="[0-9+ ]{8,15}" placeholder="01XXXXXXXXX"></label>
+  <div id="flatFields" style="display:none;gap:12px"><label>السعر<input name="pr" placeholder="مثال: 2,400,000 ج.م"></label><label>المساحة<input name="s" placeholder="مثال: 150 م²"></label></div>
+  <div style="display:flex;gap:8px"><input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true"><button class="btn" type="submit">إرسال للمراجعة</button><button class="btn alt" type="button" id="cancel">إلغاء</button></div>
+</form>
+</dialog>
+
+<script>
+var IC={"الكل":"🏙️","سوبر ماركت":"🛒","صيدليات":"💊","مطاعم وكافيهات":"🍽️","سباكة":"🔧","كهرباء":"💡","نجارة وتشطيب":"🪚","تكييف وصيانة":"❄️","ميكانيكا":"🚗","تعليم":"📚","نقل وتوصيل":"🚚","شقة للبيع":"🏠"};
+var CATS=Object.keys(IC);
+var items=[
+{n:"سوبر ماركت النور",c:"سوبر ماركت",a:"الحي الأول",p:"01000000001"},
+{n:"صيدلية الشفاء",c:"صيدليات",a:"الحي الثاني",p:"01000000002"},
+{n:"مطعم سفرة هليوبوليس",c:"مطاعم وكافيهات",a:"المنطقة التجارية",p:"01000000003"},
+{n:"م. محمود - سباك",c:"سباكة",a:"يخدم كل الأحياء",p:"01000000004"},
+{n:"أ. سعيد - كهربائي",c:"كهرباء",a:"يخدم كل الأحياء",p:"01000000005"},
+{n:"ورشة الأمانة للنجارة",c:"نجارة وتشطيب",a:"المنطقة الصناعية",p:"01000000006"},
+{n:"كول تك لصيانة التكييف",c:"تكييف وصيانة",a:"يخدم كل الأحياء",p:"01000000007"},
+{n:"م. كريم - ميكانيكي سيارات",c:"ميكانيكا",a:"يخدم كل الأحياء",p:"01000000010"},
+{n:"سنتر المتفوقين للدروس",c:"تعليم",a:"الحي الثالث",p:"01000000008"},
+{n:"توصيل سريع للمدينة",c:"نقل وتوصيل",a:"داخل المدينة",p:"01000000009"}];
+var flats=[
+{n:"شقة 3 غرف - دور ثالث",a:"الحي الأول",s:"150 م²",pr:"2,400,000 ج.م",p:"01000000011"},
+{n:"شقة غرفتين - تشطيب كامل",a:"الحي الثاني",s:"105 م²",pr:"1,650,000 ج.م",p:"01000000012"},
+{n:"دوبلكس بجاردن",a:"الحي الرابع",s:"220 م²",pr:"4,100,000 ج.م",p:"01000000013"}];
+var cur="الكل",$=function(i){return document.getElementById(i)};
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+var NOMAP=["سباكة","كهرباء","نجارة وتشطيب","تكييف وصيانة","ميكانيكا","نقل وتوصيل"];
+function acts(p,n,a,c,l){var w="2"+p.replace(/^0/,"");var m="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(n+" "+a+" هليوبوليس الجديدة");
+if(l&&/^https?:\/\//i.test(l))m=l.replace(/"/g,"%22").replace(/</g,"%3C");
+return '<div class="acts"><a class="call" href="tel:'+esc(p)+'">📞 اتصال</a><a class="wa" href="https://wa.me/'+esc(w)+'" target="_blank" rel="noopener">واتساب</a>'+(NOMAP.indexOf(c)>-1?'':'<a class="map" href="'+m+'" target="_blank" rel="noopener">📍 الموقع على الخريطة</a>')+'</div>'}
+function renderCats(){$("cats").innerHTML=CATS.map(function(c){return '<button class="cat" aria-pressed="'+(c===cur)+'" data-c="'+c+'"><span>'+IC[c]+'</span>'+c+'</button>'}).join("")}
+function vis(){var s=cur!=="شقة للبيع",f=cur==="الكل"||cur==="شقة للبيع";[["hList","list"],["hFlats","flats"]].forEach(function(x,i){var on=i?f:s;$(x[0]).style.display=$(x[1]).style.display=on?"":"none"})}
+function render(){renderFlats();vis();
+  var q=$("q").value.trim();
+  var r=items.filter(function(i){return (cur==="الكل"||i.c===cur)&&(!q||(i.n+i.c+i.a).indexOf(q)>-1)});
+  $("list").innerHTML=r.length?r.map(function(i){return '<article class="card"><div class="head"><div class="ico">'+(IC[i.c]||"📍")+'</div><div><h3>'+esc(i.n)+'</h3><span class="tag">'+esc(i.c)+'</span></div></div><p class="meta">'+esc(i.a)+'</p>'+acts(i.p,i.n,i.a,i.c,i.l)+'</article>'}).join(""):'<div class="empty">'+(LOADING?"جاري تحميل الدليل...":ERR?"تعذر تحميل الدليل، حدّث الصفحة.":"مفيش نتائج. جرّب كلمة تانية، أو أضف نشاطك بنفسك.")+'</div>';
+}
+function renderFlats(){var q=$("q").value.trim();var fl=flats.filter(function(f){return !q||(f.n+f.a).indexOf(q)>-1});$("flats").innerHTML=!fl.length?'<div class="empty">'+(LOADING?"جاري التحميل...":"لا توجد شقق معروضة حالياً.")+'</div>':fl.map(function(f){return '<article class="card"><div class="head"><div class="ico">🏠</div><div><h3>'+esc(f.n)+'</h3><span class="tag">للبيع</span></div></div><p class="meta">'+esc(f.a)+' - '+esc(f.s)+'</p><div class="price">'+esc(f.pr)+'</div>'+acts(f.p,f.n,f.a,"شقة للبيع",f.l)+'</article>'}).join("")}
+$("cats").addEventListener("click",function(e){var b=e.target.closest(".cat");if(!b)return;cur=b.dataset.c;renderCats();render()});
+$("q").addEventListener("input",render);$("go").addEventListener("click",render);
+$("catSel").innerHTML=CATS.slice(1).map(function(c){return "<option>"+c+"</option>"}).join("");
+function setFields(){var v=$("catSel").value;$("flatFields").style.display=v==="شقة للبيع"?"grid":"none";$("locField").style.display=NOMAP.indexOf(v)>-1?"none":"grid"}
+$("catSel").onchange=setFields;
+$("geo").onclick=function(){if(!navigator.geolocation){alert("المتصفح مش بيدعم تحديد الموقع.");return}
+  var b=this;b.textContent="جاري التحديد...";
+  navigator.geolocation.getCurrentPosition(function(p){
+    document.querySelector('[name="loc"]').value="https://www.google.com/maps?q="+p.coords.latitude.toFixed(6)+","+p.coords.longitude.toFixed(6);
+    b.textContent="✅ تم تحديد موقعك"},function(){b.textContent="📍 استخدم موقعي الحالي";alert("مقدرناش نحدد موقعك. اسمح للمتصفح بالوصول للموقع أو الصق الرابط بإيدك.")},{enableHighAccuracy:true,timeout:15000})};
+$("openAdd").onclick=function(){$("dlg").showModal()};$("cancel").onclick=function(){$("dlg").close()};
+/* ===== اربط الرابطين هنا (الخطوات في ملف الشرح) ===== */
+var SUBMIT_URL="https://script.google.com/macros/s/AKfycbyVjUFX2poMXgUDRKMAnMLQc_2ArCUA8yj5gK3all0Wh5jqXs5z5FtELaszF3afsi0L8A/exec";     /* رابط Web App بتاع Google Apps Script (استقبال الطلبات) */
+var SHEET_CSV_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vTP61NAukasuzkE82a0DU7MrevgkpiuGdEdI6IPMXznZgPov9iIaNyZj5Xadx5vdnf_H3fWWnJ9i22I/pub?gid=565676900&single=true&output=csv";  /* رابط CSV المنشور لشيت "الدليل" (اللي بيتعرض في الموقع) */
+
+$("addForm").addEventListener("submit",function(){
+  var f=new FormData($("addForm"));
+  if(f.get("website"))return; /* حقل مخفي لمنع الرسائل الآلية */
+  if(!SUBMIT_URL){alert("الإرسال لسه متفعلش.");return}
+  fetch(SUBMIT_URL,{method:"POST",mode:"no-cors",body:new URLSearchParams(f)})
+    .then(function(){alert("تم استلام طلبك. هيتراجع وبعدها يظهر في الدليل.")})
+    .catch(function(){alert("حصلت مشكلة في الإرسال، جرّب تاني.")});
+  $("addForm").reset();setFields();$("geo").textContent="📍 استخدم موقعي الحالي";
+});
+
+function parseCSV(t){var r=[],row=[],c="",q=false;for(var i=0;i<t.length;i++){var ch=t[i];
+  if(q){if(ch=='"'){if(t[i+1]=='"'){c+='"';i++}else q=false}else c+=ch}
+  else if(ch=='"')q=true;
+  else if(ch==","){row.push(c);c=""}
+  else if(ch=="\n"||ch=="\r"){if(ch=="\r"&&t[i+1]=="\n")i++;row.push(c);r.push(row);row=[];c=""}
+  else c+=ch}
+  if(c!==""||row.length){row.push(c);r.push(row)}return r}
+function fixPhone(p){var d=String(p||"").replace(/[^0-9]/g,"");
+  if(d.indexOf("20")===0&&d.length===12)d="0"+d.slice(2);
+  else if(d.length===10&&d.charAt(0)==="1")d="0"+d;return d}
+function load(){if(!SHEET_CSV_URL)return;
+  fetch(SHEET_CSV_URL,{cache:"no-store"}).then(function(r){return r.text()}).then(function(t){
+    var it=[],fl=[];
+    parseCSV(t).slice(1).forEach(function(r){
+      if(!r[0]||!r[1]||!r[3])return;
+      var o={n:r[0].trim(),c:r[1].trim(),a:(r[2]||"").trim()||"هليوبوليس الجديدة",p:fixPhone(r[3]),pr:(r[4]||"").trim(),s:(r[5]||"").trim(),l:(r[6]||"").trim()};
+      (o.c==="شقة للبيع"?fl:it).push(o)});
+    items=it;flats=fl;LOADING=false;ERR=false;render();
+    try{localStorage.setItem("hd_cache",JSON.stringify({it:it,fl:fl}))}catch(e){}
+  }).catch(function(){LOADING=false;ERR=true;render()})}
+
+/* لو الدليل متربط بالشيت، منعرضش البيانات التجريبية أبداً */
+var LOADING=!!SHEET_CSV_URL,ERR=false;
+if(LOADING){
+  items=[];flats=[];
+  try{var cc=JSON.parse(localStorage.getItem("hd_cache")||"null");if(cc&&cc.it&&cc.fl){items=cc.it;flats=cc.fl}}catch(e){}
+}
+
+/* ===== تتبع الزيارات والاتصالات (للوحة التحكم) ===== */
+var VID="x";try{VID=localStorage.getItem("vid")||Math.random().toString(36).slice(2);localStorage.setItem("vid",VID)}catch(e){}
+function track(ev,n,c){if(!SUBMIT_URL)return;
+  var dbg=location.hash==="#debug";
+  try{
+    var q=new URLSearchParams({ev:ev,n:n||"",c:c||"",v:VID}).toString();
+    fetch(SUBMIT_URL+"?"+q,{cache:"no-store"}).then(function(r){return r.text().then(function(t){if(dbg)alert(ev+" | "+r.status+" | "+t.slice(0,120))})})
+    .catch(function(err){if(dbg)alert(ev+" | خطأ: "+err);fetch(SUBMIT_URL+"?"+q,{mode:"no-cors"}).catch(function(){})});
+  }catch(e){if(dbg)alert("catch: "+e)}}
+track("visit");
+document.addEventListener("click",function(e){var a=e.target.closest(".acts a");if(!a)return;var c=a.closest(".card");
+  track(a.classList.contains("call")?"call":a.classList.contains("wa")?"wa":"map",c.querySelector("h3").textContent,c.querySelector(".tag").textContent)});
+var st;$("q").addEventListener("input",function(){clearTimeout(st);var v=this.value.trim();st=setTimeout(function(){if(v.length>1)track("search",v,"")},1500)});
+
+renderCats();render();renderFlats();load();
+</script>
+</body>
+</html>
